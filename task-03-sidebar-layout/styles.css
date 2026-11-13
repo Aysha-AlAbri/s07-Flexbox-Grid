@@ -1,1 +1,40 @@
 /* TODO: build .app-shell, .sidebar and .main-content with Flexbox to match the mockup */
+.app-shell{
+    display: flex;
+    color:#1a1a1a;
+    min-height: 100vh;
+
+}
+.sidebar{
+    display: flex;
+    background-color: #111827;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 240px;
+    flex:0 0 240px;
+    color: #ffffff;
+    padding: 20px;
+    
+}
+.main-content{
+    flex:1;
+    min-width: 0;
+    background-color: #f7f7f8;
+    padding: 25px;
+}
+
+.logo{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.h1{
+     font-weight: bold;
+      
+}
