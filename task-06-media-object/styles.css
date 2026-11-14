@@ -1,1 +1,53 @@
 /* TODO: build .comment with Flexbox to match the mockup */
+.comment-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
+    background-color: #f7f7f8;
+    min-height: 100vh;
+    padding: 28px 16px;
+    box-sizing: border-box;
+
+}
+
+.comment{
+    display: flex;
+    align-items: flex-start;
+    gap:12px;
+    width: 100%;
+    max-width: 446px;
+    padding: 14px;
+    border:1px solid #e5e7eb;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #818cf8;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.comment-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.comment-author {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin: 0 0 4px;
+}
+
+.comment-text {
+    font-size: 13px;
+    color: #4b5563;
+    line-height: 1.4;
+    margin: 0;
+}
