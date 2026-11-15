@@ -1,1 +1,68 @@
 /* TODO: build .dashboard with CSS Grid and grid-template-areas to match the mockup */
+.dashboard{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 86px 86px;
+    grid-template-areas: 
+        "chart users sessions"
+        "chart conversion order";
+    gap:12px;
+    padding:20px;
+    background-color: #f7f7f8;
+    min-height: 100vh;
+    box-sizing: border-box
+}
+.panel {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.chart-panel h2 {
+    font-size: 15px;
+    color: #1a1a1a;
+    margin: 0 0 8px;
+    font-weight: bold;
+}
+
+.img-placeholder {
+    height: 137px;
+    background-color: #93c5fd;
+    border-radius: 5px;
+}
+
+.stat-tile h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #6b7280;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin: 0;
+}
+.chart-panel {
+    grid-area: chart;
+}
+
+.stat-tile:nth-of-type(2) {
+    grid-area: users;
+}
+
+.stat-tile:nth-of-type(3) {
+    grid-area: sessions;
+}
+
+.stat-tile:nth-of-type(4) {
+    grid-area: conversion;
+}
+
+.stat-tile:nth-of-type(5) {
+    grid-area: order;
+}
